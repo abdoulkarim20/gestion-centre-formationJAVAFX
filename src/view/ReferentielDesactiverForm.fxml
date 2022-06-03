@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="604.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReferentielDesactiverController">
+   <children>
+      <Label layoutX="187.0" layoutY="23.0" prefHeight="38.0" prefWidth="251.0" text="LES REFERENTIELS DESACTIVES">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateBtn" layoutX="60.0" layoutY="134.0" mnemonicParsing="false" onAction="#updateHandle" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #0000FF;" text="Modifier" />
+      <Button fx:id="deleteBtn" layoutX="205.0" layoutY="134.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #FF0000;" text="Suprimer" />
+      <TableView fx:id="referentielTbview" layoutX="60.0" layoutY="180.0" prefHeight="252.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="idTbcolum" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="nomreferentielTbcolum" prefWidth="215.0" text="Nom du referentiel" />
+            <TableColumn fx:id="promotionTbclum" prefWidth="231.0" text="Nom de la promotion" />
+        </columns>
+      </TableView>
+      <Button fx:id="activeRefBtn" layoutX="398.0" layoutY="134.0" mnemonicParsing="false" onAction="#activeRefHandle" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #00FF00;" text="Activé un Referentiel" />
+      <Label layoutX="60.0" layoutY="61.0" prefHeight="25.0" prefWidth="167.0" text="Le nom du referentiel" />
+      <Label layoutX="60.0" layoutY="95.0" prefHeight="25.0" prefWidth="167.0" text="La promotion du referentiel" />
+      <ComboBox fx:id="promotionCbx" layoutX="325.0" layoutY="95.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="referentielTfld" layoutX="325.0" layoutY="61.0" prefHeight="25.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>

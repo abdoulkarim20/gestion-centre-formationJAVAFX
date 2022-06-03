@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="main.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+</GridPane>
+        //Le boutton qui permet de modifier un referentiel
+        //Le bouton qui permet d'ajouter un nouveau referentiel
+        //Le bouton qui permet d'enregistrer un referentiel
+        //Le boutton qui permet de supprimer un referentiel
+        //La methode qui permet d'ajouter un nouveau referentiel
+        //Le methode qui permet d'enregistrer un refernetiel
+        //La methode qui permet de modfier un refernetiel
+        //La methode qui permet de supprimer un referentiel

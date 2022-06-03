@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReferentielController">
+   <children>
+      <Label layoutX="215.0" layoutY="14.0" prefHeight="38.0" prefWidth="251.0" text="AJOUTEZ UN REFERENTIEL">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="52.0" prefHeight="25.0" prefWidth="142.0" text="Nom du referentiel" />
+      <TextField fx:id="referentielTfld" layoutX="221.0" layoutY="52.0" prefHeight="25.0" prefWidth="343.0" />
+      <Button fx:id="newBtn" layoutX="61.0" layoutY="142.0" mnemonicParsing="false" onAction="#newHandle" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00FFFF;" text="Nouveau " />
+      <Button fx:id="saveBtn" layoutX="140.0" layoutY="142.0" mnemonicParsing="false" onAction="#saveHandle" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #00FF00;" text="Enregistrer" />
+      <Button fx:id="updateBtn" layoutX="221.0" layoutY="142.0" mnemonicParsing="false" onAction="#updateHandle" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #0000FF;" text="Modifier" />
+      <Button fx:id="deleteBtn" layoutX="306.0" layoutY="142.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FF0000;" text="Suprimer" />
+      <TableView fx:id="referentielTbview" layoutX="60.0" layoutY="179.0" prefHeight="200.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="idTbcolum" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="nomreferentielTbcolum" prefWidth="215.0" text="Nom du referentiel" />
+            <TableColumn fx:id="promotionTbclum" prefWidth="231.0" text="Nom de la promotion" />
+        </columns>
+      </TableView>
+      <Label layoutX="61.0" layoutY="108.0" prefHeight="17.0" prefWidth="142.0" text="Nom de la promotion" />
+      <ComboBox fx:id="promotionCbx" layoutX="221.0" layoutY="104.0" prefHeight="25.0" prefWidth="343.0" />
+      <Button fx:id="desactiveRefBtn" layoutX="398.0" layoutY="142.0" mnemonicParsing="false" onAction="#desactiveRefHandle" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #FFFF00;" text="Desactive un Referentile" />
+   </children>
+</AnchorPane>

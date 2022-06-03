@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="paneBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <top>
+      <MenuBar prefHeight="33.0" prefWidth="820.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Utilisateur">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AjouterUserHandle" text="Ajouter/Parametré" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Promotion">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ajouterPromoHandle" text="Ajouter/Parametré" />
+                  <MenuItem mnemonicParsing="false" onAction="#activerPromoHandle" text="Les promotions désactivées" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Referentiel">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AjouterReferentielHandle" text="Ajouter/Parametré" />
+                  <MenuItem mnemonicParsing="false" onAction="#ActiverReferentielHandle" text="Les referentiels désactivés" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Etudiant">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ajouterEtudiantHandle" text="Ajouter/Parametré" />
+                  <MenuItem mnemonicParsing="false" onAction="#AjouterEtudiantHandle" text="Supendre un etudiant" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="470.0" prefWidth="100.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="67.0" prefWidth="820.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane prefHeight="455.0" prefWidth="100.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <Label prefHeight="188.0" prefWidth="467.0" text="ESPACE ADMINISTRATEUR" textAlignment="JUSTIFY" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

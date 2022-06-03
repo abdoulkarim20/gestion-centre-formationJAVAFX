@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="906.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EspceUserController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Etudiant">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ajouter un Etudiant" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Prametre">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Modifier Votre renseignement" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" text="A propos de notre application" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="417.0" prefWidth="100.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="100.0" prefWidth="906.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane prefHeight="417.0" prefWidth="100.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <Label prefHeight="254.0" prefWidth="486.0" style="-fx-background-color: yellow;" text="BIENVENU DANS VOTRE ESPACE UTILISATEUR" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

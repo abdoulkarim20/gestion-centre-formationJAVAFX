@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="531.0" prefWidth="582.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PromotionDesactiveController">
+   <children>
+      <Label layoutX="166.0" layoutY="14.0" text="LES PROMOTION DESACTIVES" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="63.0" text="Nom de la Promotion" />
+      <Label layoutX="50.0" layoutY="106.0" text="Date d'ouverture" />
+      <Label layoutX="50.0" layoutY="146.0" text="Date de fermeture" />
+      <Button fx:id="updatePromoBtn" layoutX="50.0" layoutY="224.0" mnemonicParsing="false" onAction="#updateHandle" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #0000FF;" text="Modifier" />
+      <Button fx:id="deletePromoaBtn" layoutX="206.0" layoutY="224.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #FF0000;" text="Supprimer" />
+      <TextField fx:id="nomPromoTfld" layoutX="321.0" layoutY="59.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="dateOuvertureDatePiker" layoutX="321.0" layoutY="102.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="dateFermetureDatePiker" layoutX="321.0" layoutY="142.0" prefHeight="25.0" prefWidth="178.0" />
+      <TableView fx:id="promoTview" layoutX="51.0" layoutY="272.0" prefHeight="247.0" prefWidth="448.0">
+        <columns>
+          <TableColumn fx:id="idTbclum" prefWidth="36.0" text="ID" />
+          <TableColumn fx:id="nomPromoTbclum" prefWidth="154.0" text="Nom de la Promotion" />
+            <TableColumn fx:id="dateOuvertureTbclum" prefWidth="129.0" text="Date ouverture" />
+            <TableColumn fx:id="dateFermetureTbclum" prefWidth="131.0" text="Date fermeture" />
+        </columns>
+      </TableView>
+      <Button fx:id="activePromoaBtn1" layoutX="355.0" layoutY="224.0" mnemonicParsing="false" onAction="#activeHandle" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #00FF00;" text="Activé la promotion" />
+   </children>
+</AnchorPane>

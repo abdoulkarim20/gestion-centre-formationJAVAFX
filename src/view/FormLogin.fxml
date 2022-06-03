@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <Label layoutX="203.0" layoutY="20.0" prefHeight="31.0" prefWidth="205.0" text="AUTHENTIFICATION" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="49.0" layoutY="72.0" text="NOM D'UTILISATEUR" />
+      <Label layoutX="49.0" layoutY="110.0" prefHeight="17.0" prefWidth="114.0" text="MOT DE PASSE" />
+      <TextField fx:id="UsernameTFLD" layoutX="203.0" layoutY="68.0" />
+      <PasswordField fx:id="PasswordFLD" layoutX="203.0" layoutY="106.0" />
+      <Button layoutX="204.0" layoutY="167.0" mnemonicParsing="false" onAction="#ConnexionHandle" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #00FF00;" text="SE CONNECTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="531.0" prefWidth="720.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PromotionController">
+   <children>
+      <Label layoutX="166.0" layoutY="14.0" text="AJOUTER UNE PROMOTION" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="63.0" text="Nom de la Promotion" />
+      <Label layoutX="50.0" layoutY="106.0" text="Date d'ouverture" />
+      <Label layoutX="50.0" layoutY="146.0" text="Date de fermeture" />
+      <Button fx:id="newPromoBtn" layoutX="52.0" layoutY="224.0" mnemonicParsing="false" onAction="#newHandle" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #00FFFF;" text="Nouveau" />
+      <Button fx:id="savePromoBtn" layoutX="147.0" layoutY="224.0" mnemonicParsing="false" onAction="#saveHandle" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #00FF00;" text="Enregistrer" />
+      <Button fx:id="updatePromoBtn" layoutX="253.0" layoutY="224.0" mnemonicParsing="false" onAction="#updateHandle" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #0000FF;" text="Modifier" />
+      <Button fx:id="deletePromoaBtn" layoutX="360.0" layoutY="224.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #FF0000;" text="Supprimer" />
+      <TextField fx:id="nomPromoTfld" layoutX="390.0" layoutY="59.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="dateOuvertureDatePiker" layoutX="390.0" layoutY="94.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="dateFermetureDatePiker" layoutX="390.0" layoutY="142.0" prefHeight="25.0" prefWidth="178.0" />
+      <TableView fx:id="promoTview" layoutX="51.0" layoutY="272.0" prefHeight="247.0" prefWidth="517.0" style="-fx-background-color: ;">
+        <columns>
+          <TableColumn fx:id="idTbclum" prefWidth="36.0" text="ID" />
+          <TableColumn fx:id="nomPromoTbclum" prefWidth="200.0" text="Nom de la Promotion" />
+            <TableColumn fx:id="dateOuvertureTbclum" prefWidth="146.0" text="Date ouverture" />
+            <TableColumn fx:id="dateFermetureTbclum" prefWidth="134.0" text="Date fermeture" />
+        </columns>
+      </TableView>
+      <Button fx:id="desactivePromoaBtn1" layoutX="461.0" layoutY="224.0" mnemonicParsing="false" onAction="#desactiveHandle" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #FFFF00;" text="Desactive Promo" />
+   </children>
+</AnchorPane>
